@@ -9,9 +9,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class MyInteger_Test {
-
+public static MyInteger obj;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
+		obj=new MyInteger(4);
 	}
 
 	@AfterClass
@@ -26,9 +27,21 @@ public class MyInteger_Test {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
+/*	@Test
 	public void test() {
-		assertTrue(1==1);
+			assertTrue(1==1);
+	}
+*/
+	@Test 
+	public void test2(){
+		assertTrue(obj.isEven());
 	}
 
+	@Test
+	public void test3(){
+		assertFalse(obj.isOdd());
+	}
+	
 }
+
+	
