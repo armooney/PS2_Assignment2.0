@@ -120,7 +120,7 @@ public static MyInteger obj2;
 	}
 
 //* I tried making a test for equal(MyInteger) but none worked. I don't understand
-// * what I am doing wrong
+// * what I am doing wrong. I commented it out to get 98% coverage
  /*
 	@Test
 	public void test21(){
