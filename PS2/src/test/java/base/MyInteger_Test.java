@@ -124,11 +124,11 @@ public static MyInteger obj2;
  /*
 	@Test
 	public void test21(){
-		assertEquals(myInt3,10 );
+		assertEquals(new MyInteger(10),10);
 	}
-	Am I at least on the right track?
+Am i at least on the correct track?
 //------------------------------------------------------------------------------------
-*/	
+*/
 }
 
 	
