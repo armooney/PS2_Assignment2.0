@@ -1,8 +1,6 @@
 package base;
 
 public class MyInteger {
-
-
 	
 	private int iValue;
 	
@@ -10,24 +8,15 @@ public class MyInteger {
 		this.iValue = iValue;
 	}
 		
-		public int getiValue() {
+	public int getiValue() {
 			return iValue;
 		}
-/*
-		public void setiValue(int iValue) {
-			this.iValue = iValue;
-	}
-*/
-//object
-//new MyInteger = (int iValue);
-
-	
 //000000000000000000000000000000000000000000000000000000000000000000	
 //methods
 	
-	boolean isPrime(){
-		for(int i=2; i<iValue;i++){
-			if(iValue%i==0)
+	public boolean isPrime(){
+		for(int i=2; i<getiValue();i++){
+			if(getiValue()%i==0)
 				return false;
 		}
 			return true;
@@ -35,14 +24,14 @@ public class MyInteger {
 //------------------------------------------------------------------		
 	
 	public boolean isEven(){
-		if (iValue%2==0)
+		if (getiValue()%2==0)
 			return true;
 		else 
 			return false;
 	}
 //------------------------------------------------------------------
 	public boolean isOdd(){
-		if(iValue%2==0)
+		if(getiValue()%2==0)
 			return false;
 		else
 			return true;
@@ -97,13 +86,19 @@ public class MyInteger {
 				return false;
 			else
 				return true;
-		
 		}
 //00000000000000000000000000000000000000000000000000000000000000000		
 		
-
-
-
+		public boolean equals(int intValue ){
+			return getiValue() == intValue;
+		}
+//----------------------------------------------------------------		
+		public boolean equals(MyInteger myInt){
+			return equals(myInt.getiValue());
+		}
+			
+//0000000000000000000000000000000000000000000000000000000000000000		
 }
+	
 
 

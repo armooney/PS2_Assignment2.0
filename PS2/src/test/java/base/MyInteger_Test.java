@@ -33,15 +33,23 @@ public static MyInteger obj;
 	}
 */
 	@Test 
-	public void test2(){
+	public void test1(){
 		assertTrue(obj.isEven());
 	}
 
 	@Test
-	public void test3(){
+	public void test2(){
 		assertFalse(obj.isOdd());
 	}
-	
+	@Test
+	public void test3(){
+		assertFalse(obj.isPrime());
+	}
+/*	@Test
+	public void test4(){
+		assert(obj.isEven(y));
+	}
+*/
 }
 
 	
