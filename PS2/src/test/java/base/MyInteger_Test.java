@@ -118,7 +118,7 @@ public static MyInteger obj2;
 	public void test20(){
 		assertTrue(myInt3.equals(10));
 	}
-
+//----------------------------------------------------------
 //* I tried making a test for equal(MyInteger) but none worked. I don't understand
 // * what I am doing wrong. I commented it out to get 98% coverage
  /*
