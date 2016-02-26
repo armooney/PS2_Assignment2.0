@@ -14,6 +14,7 @@ public static MyInteger obj;
 	public static void setUpBeforeClass() throws Exception {
 		obj=new MyInteger(4);
 	}
+//-----------------------------------------------------------------------------------
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
@@ -26,12 +27,7 @@ public static MyInteger obj;
 	@After
 	public void tearDown() throws Exception {
 	}
-
-/*	@Test
-	public void test() {
-			assertTrue(1==1);
-	}
-*/
+//----------------------------------------------------------------------------------
 	@Test 
 	public void test1(){
 		assertTrue(obj.isEven());
@@ -45,11 +41,37 @@ public static MyInteger obj;
 	public void test3(){
 		assertFalse(obj.isPrime());
 	}
-/*	@Test
+//------------------------------------------------------------------------------------
+//this is testing static int parameters
+	@Test
 	public void test4(){
-		assert(obj.isEven(y));
+		assertTrue(MyInteger.isEven(8));
 	}
-*/
+	@Test
+	public void test5(){
+		assertTrue(MyInteger.isOdd(9));
+	}
+	@Test
+	public void test6(){
+		assertFalse(MyInteger.isPrime(9));
+	}
+//-----------------------------------------------------------------------------------
+//this is testing static MyIntegers parameters
+	MyInteger myInt = new MyInteger(10);
+	@Test
+	public void test7(){
+		assertTrue(MyInteger.isEven(myInt));
+	}
+	@Test
+	public void test8(){
+		assertFalse(MyInteger.isOdd(16));
+	}
+	@Test
+	public void test9(){
+		assertTrue(MyInteger.isPrime(new MyInteger(13)));
+	}
+//------------------------------------------------------------------------------------
+	
 }
 
 	
