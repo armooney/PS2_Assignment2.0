@@ -126,6 +126,7 @@ public static MyInteger obj2;
 	public void test21(){
 		assertEquals(myInt3,10 );
 	}
+	Am I at least on the right track?
 //------------------------------------------------------------------------------------
 */	
 }
