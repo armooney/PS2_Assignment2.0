@@ -121,13 +121,13 @@ public static MyInteger obj2;
 
 //* I tried making a test for equal(MyInteger) but none worked. I don't understand
 // * what I am doing wrong
-/* 
+ 
 	@Test
 	public void test21(){
 		assertEquals(myInt3,10 );
 	}
 //------------------------------------------------------------------------------------
-*/	
+	
 }
 
 	
